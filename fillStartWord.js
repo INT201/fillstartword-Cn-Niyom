@@ -4,7 +4,7 @@ function fillStartWord(startWord, word) {
     if (word === null || word === undefined) {
         return undefined;
     }
-    if (startWord !== word.substring(0, startWord.length)) {
+    if (!word.includes(startWord)) {
         return startWord + word;
     }
     return word;
